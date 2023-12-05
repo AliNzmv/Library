@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="container signup-section">
+    <div class="section-content">
+      <h2>Update a field </h2>
+
+      <form method="POST">
+
+        <div class="form-group">
+          <label>select a field to chaange:</label>
+          <table style="width:60%">
+            <tr>
+              <th>ISBN</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Price</th>
+              <th>Pages</th>
+            </tr>
+            <tr>
+              <td>{{book_data[0][0]}}</td>
+              <td>{{book_data[0][1]}}</td>
+              <td>{{book_data[0][2]}}</td>
+              <td>{{book_data[0][3]}}</td>
+              <td>{{book_data[0][4]}}</td>
+            </tr>
+
+          </table>
+             
+        
+        
+
+
+
+
+
+        <a href="/" class="btn-primary">Back to Home </a>
+
+        
+      </form>
+    </div>
+  </main>
+{% endblock %}

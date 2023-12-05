@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<body>
+    <h1>
+        Users informations
+    </h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Operator's Avatar</th>
+                </tr>
+
+            </thead>
+            <tr class="tr1">
+                <td>User1</td>
+                <td>admin</td>
+                <td>
+                    <a href="mailto:user1@test.com" target="blank">user1@test.com</a>
+                </td>
+                <td>
+                    <a href="tel:091922222">091922222</a>
+                </td>
+                <td>
+                    <img src="static/img/admin.jpg" width="30px" height="30px" alt="User1"/>
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td>User2</td>
+                <td>operator</td>
+                <td>
+                    <a href="mailto:user2@test.com" target="blank">user2@test.com</a>
+                </td>
+                <td>
+                    <a href="tel:091377777">091377777</a>
+                </td>
+                <td>
+                    <img src="static/img/operator.jpg" width="30px" height="30px" alt="User2"/>
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td>User3</td>
+                <td>supporter</td>
+                <td>
+                    <a href="mailto:user3@test.com" target="blank">user3@test.com</a>
+                </td>
+                <td>
+                    <a href="tel:091588888">091588888</a>
+                </td>
+                <td>
+                    <img src="static/img/supporter.jpg" width="30px" height="30px" alt="User3"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+{% endblock %}
